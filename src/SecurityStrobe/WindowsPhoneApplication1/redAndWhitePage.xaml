@@ -1,0 +1,296 @@
+﻿<phone:PhoneApplicationPage 
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+	xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:my="clr-namespace:Microsoft.Advertising.Mobile.UI;assembly=Microsoft.Advertising.Mobile.UI" xmlns:Custom="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:ic="clr-namespace:Microsoft.Expression.Interactivity.Core;assembly=Microsoft.Expression.Interactions"
+	mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="800"
+	x:Class="SecurityStrobe.redAndWhitePage"
+	Orientation="Portrait"
+	shell:SystemTray.IsVisible="True" Loaded="PhoneApplicationPage_Loaded">
+	<phone:PhoneApplicationPage.Resources>
+		<Storyboard x:Name="redAndWhiteStory" RepeatBehavior="Forever">
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.Background).(SolidColorBrush.Color)" Storyboard.TargetName="ContentPanel">
+				<EasingColorKeyFrame KeyTime="0" Value="#FFFB0808"/>
+				<EasingColorKeyFrame KeyTime="0:0:0.109" Value="#FFF7F3F3"/>
+				<EasingColorKeyFrame KeyTime="0:0:0.137" Value="#FEF70F0F"/>
+				<EasingColorKeyFrame KeyTime="0:0:0.219" Value="#FFFD0D0D"/>
+				<EasingColorKeyFrame KeyTime="0:0:0.274" Value="#FEFDF9F9"/>
+				<EasingColorKeyFrame KeyTime="0:0:0.328" Value="#FFFBF7F7"/>
+				<EasingColorKeyFrame KeyTime="0:0:0.439" Value="#FFF70A0A"/>
+				<EasingColorKeyFrame KeyTime="0:0:0.547" Value="#FFF7EDED"/>
+				<EasingColorKeyFrame KeyTime="0:0:0.686" Value="#FFF31010"/>
+				<EasingColorKeyFrame KeyTime="0:0:0.822" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:0.959" Value="#FFFB0F0F"/>
+				<EasingColorKeyFrame KeyTime="0:0:1.095" Value="#FFF7F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:1.233" Value="#FFF70808"/>
+				<EasingColorKeyFrame KeyTime="0:0:1.369" Value="#FFF7EBEB"/>
+				<EasingColorKeyFrame KeyTime="0:0:1.506" Value="#FFF70C0C"/>
+				<EasingColorKeyFrame KeyTime="0:0:1.643" Value="#FFF1EBEB"/>
+				<EasingColorKeyFrame KeyTime="0:0:1.78" Value="#FFF51313"/>
+				<EasingColorKeyFrame KeyTime="0:0:1.917" Value="#FFFDF9F9"/>
+				<EasingColorKeyFrame KeyTime="0:0:2.055" Value="#FFF10E0E"/>
+				<EasingColorKeyFrame KeyTime="0:0:2.191" Value="#FFF1E7E7"/>
+				<EasingColorKeyFrame KeyTime="0:0:2.328" Value="#FEFD0D0D"/>
+				<EasingColorKeyFrame KeyTime="0:0:2.464" Value="#FFF9EFEF"/>
+				<EasingColorKeyFrame KeyTime="0:0:2.602" Value="#FFF70808"/>
+				<EasingColorKeyFrame KeyTime="0:0:2.738" Value="#FFF7EFEF"/>
+				<EasingColorKeyFrame KeyTime="0:0:2.875" Value="#FFF50C0C"/>
+				<EasingColorKeyFrame KeyTime="0:0:3.012" Value="#FFF1E7E7"/>
+				<EasingColorKeyFrame KeyTime="0:0:3.15" Value="#FFF30E0E"/>
+				<EasingColorKeyFrame KeyTime="0:0:3.286" Value="#FFF5EDED"/>
+				<EasingColorKeyFrame KeyTime="0:0:3.423" Value="#FFF70F0F"/>
+				<EasingColorKeyFrame KeyTime="0:0:3.56" Value="#FFF1E7E7"/>
+				<EasingColorKeyFrame KeyTime="0:0:3.697" Value="#FFF31212"/>
+				<EasingColorKeyFrame KeyTime="0:0:3.834" Value="#FFEFE7E7"/>
+				<EasingColorKeyFrame KeyTime="0:0:3.971" Value="#FFF31414"/>
+				<EasingColorKeyFrame KeyTime="0:0:4.108" Value="#FFF5EBEB"/>
+				<EasingColorKeyFrame KeyTime="0:0:4.244" Value="#FFFB1111"/>
+				<EasingColorKeyFrame KeyTime="0:0:4.383" Value="#FFEDE3E3"/>
+				<EasingColorKeyFrame KeyTime="0:0:4.519" Value="#FFF90A0A"/>
+				<EasingColorKeyFrame KeyTime="0:0:4.656" Value="#FFEFE5E5"/>
+				<EasingColorKeyFrame KeyTime="0:0:4.792" Value="#FFF30C0C"/>
+				<EasingColorKeyFrame KeyTime="0:0:4.93" Value="#FFEFE3E3"/>
+				<EasingColorKeyFrame KeyTime="0:0:5.066" Value="#FFF90606"/>
+				<EasingColorKeyFrame KeyTime="0:0:5.203" Value="#FFFBF5F5"/>
+				<EasingColorKeyFrame KeyTime="0:0:5.34" Value="#FFF70808"/>
+				<EasingColorKeyFrame KeyTime="0:0:5.477" Value="#FFF7EFEF"/>
+				<EasingColorKeyFrame KeyTime="0:0:5.614" Value="#FFF90A0A"/>
+				<EasingColorKeyFrame KeyTime="0:0:5.752" Value="#FFFBF5F5"/>
+				<EasingColorKeyFrame KeyTime="0:0:5.888" Value="#FFF50808"/>
+				<EasingColorKeyFrame KeyTime="0:0:6.025" Value="#FFFBF5F5"/>
+				<EasingColorKeyFrame KeyTime="0:0:6.161" Value="#FFF70F0F"/>
+				<EasingColorKeyFrame KeyTime="0:0:6.299" Value="#FFF5E7E7"/>
+				<EasingColorKeyFrame KeyTime="0:0:6.435" Value="#FFF71111"/>
+				<EasingColorKeyFrame KeyTime="0:0:6.572" Value="#FFF7F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:6.709" Value="#FFF51515"/>
+				<EasingColorKeyFrame KeyTime="0:0:6.847" Value="#FFF5E9E9"/>
+				<EasingColorKeyFrame KeyTime="0:0:6.983" Value="#FFF31010"/>
+				<EasingColorKeyFrame KeyTime="0:0:7.121" Value="#FFF5EDED"/>
+				<EasingColorKeyFrame KeyTime="0:0:7.257" Value="#FFFB0D0D"/>
+				<EasingColorKeyFrame KeyTime="0:0:7.394" Value="#FFF3EBEB"/>
+				<EasingColorKeyFrame KeyTime="0:0:7.531" Value="#FFF51010"/>
+				<EasingColorKeyFrame KeyTime="0:0:7.668" Value="#FFFBF5F5"/>
+				<EasingColorKeyFrame KeyTime="0:0:7.805" Value="#FFFD1111"/>
+				<EasingColorKeyFrame KeyTime="0:0:7.941" Value="#FFF7EFEF"/>
+				<EasingColorKeyFrame KeyTime="0:0:8.08" Value="#FFF51010"/>
+				<EasingColorKeyFrame KeyTime="0:0:8.216" Value="#FFF5EBEB"/>
+				<EasingColorKeyFrame KeyTime="0:0:8.353" Value="#FFF50A0A"/>
+				<EasingColorKeyFrame KeyTime="0:0:8.49" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:8.627" Value="#FFF30E0E"/>
+				<EasingColorKeyFrame KeyTime="0:0:8.763" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:8.9" Value="#FFF90D0D"/>
+				<EasingColorKeyFrame KeyTime="0:0:9.037" Value="#FFF1E5E5"/>
+				<EasingColorKeyFrame KeyTime="0:0:9.175" Value="#FFF50E0E"/>
+				<EasingColorKeyFrame KeyTime="0:0:9.311" Value="#FFF9EFEF"/>
+				<EasingColorKeyFrame KeyTime="0:0:9.449" Value="#FFF11010"/>
+				<EasingColorKeyFrame KeyTime="0:0:9.585" Value="#FFEBE0E0"/>
+				<EasingColorKeyFrame KeyTime="0:0:9.722" Value="#FFF31212"/>
+				<EasingColorKeyFrame KeyTime="0:0:9.858" Value="#FFEBE0E0"/>
+				<EasingColorKeyFrame KeyTime="0:0:9.996" Value="#FFF50C0C"/>
+				<EasingColorKeyFrame KeyTime="0:0:10.132" Value="#FFEBE0E0"/>
+				<EasingColorKeyFrame KeyTime="0:0:10.269" Value="#FFF50C0C"/>
+				<EasingColorKeyFrame KeyTime="0:0:10.407" Value="#FFEBE0E0"/>
+				<EasingColorKeyFrame KeyTime="0:0:10.544" Value="#FFF90808"/>
+				<EasingColorKeyFrame KeyTime="0:0:10.68" Value="#FFF7EFEF"/>
+				<EasingColorKeyFrame KeyTime="0:0:10.818" Value="#FFF90A0A"/>
+				<EasingColorKeyFrame KeyTime="0:0:10.954" Value="#FFF5EBEB"/>
+				<EasingColorKeyFrame KeyTime="0:0:11.091" Value="#FFF50E0E"/>
+				<EasingColorKeyFrame KeyTime="0:0:11.229" Value="#FFEFDBDB"/>
+				<EasingColorKeyFrame KeyTime="0:0:11.365" Value="#FFF10A0A"/>
+				<EasingColorKeyFrame KeyTime="0:0:11.502" Value="#FFEBE0E0"/>
+				<EasingColorKeyFrame KeyTime="0:0:11.639" Value="#FFEF0E0E"/>
+				<EasingColorKeyFrame KeyTime="0:0:11.777" Value="#FFEBE0E0"/>
+				<EasingColorKeyFrame KeyTime="0:0:11.913" Value="#FFED0E0E"/>
+				<EasingColorKeyFrame KeyTime="0:0:12.05" Value="#FFEBE0E0"/>
+				<EasingColorKeyFrame KeyTime="0:0:12.187" Value="#FFF71111"/>
+				<EasingColorKeyFrame KeyTime="0:0:12.324" Value="#FFEBE0E0"/>
+				<EasingColorKeyFrame KeyTime="0:0:12.46" Value="#FFFB0606"/>
+				<EasingColorKeyFrame KeyTime="0:0:12.597" Value="#FFFDF9F9"/>
+				<EasingColorKeyFrame KeyTime="0:0:12.734" Value="#FFF70808"/>
+				<EasingColorKeyFrame KeyTime="0:0:12.872" Value="#FFFFFBFB"/>
+				<EasingColorKeyFrame KeyTime="0:0:13.008" Value="#FFFB0D0D"/>
+				<EasingColorKeyFrame KeyTime="0:0:13.146" Value="#FFF7F5F5"/>
+				<EasingColorKeyFrame KeyTime="0:0:13.282" Value="#FFF30A0A"/>
+				<EasingColorKeyFrame KeyTime="0:0:13.419" Value="#FFFBF9F9"/>
+				<EasingColorKeyFrame KeyTime="0:0:13.556" Value="#FFFB0D0D"/>
+				<EasingColorKeyFrame KeyTime="0:0:13.693" Value="#FFFBF3F3"/>
+				<EasingColorKeyFrame KeyTime="0:0:13.829" Value="#FFFF0F0F"/>
+				<EasingColorKeyFrame KeyTime="0:0:13.966" Value="#FFF7F5F5"/>
+				<EasingColorKeyFrame KeyTime="0:0:14.104" Value="#FFF30C0C"/>
+				<EasingColorKeyFrame KeyTime="0:0:14.241" Value="#FFF7F5F5"/>
+				<EasingColorKeyFrame KeyTime="0:0:14.377" Value="#FFFB0D0D"/>
+				<EasingColorKeyFrame KeyTime="0:0:14.515" Value="#FFF7F5F5"/>
+				<EasingColorKeyFrame KeyTime="0:0:14.651" Value="#FFF71111"/>
+				<EasingColorKeyFrame KeyTime="0:0:14.788" Value="#FFF7F5F5"/>
+				<EasingColorKeyFrame KeyTime="0:0:14.926" Value="#FFF90A0A"/>
+				<EasingColorKeyFrame KeyTime="0:0:15.062" Value="#FFF7F5F5"/>
+				<EasingColorKeyFrame KeyTime="0:0:15.199" Value="#FFF70C0C"/>
+				<EasingColorKeyFrame KeyTime="0:0:15.336" Value="#FFF7F5F5"/>
+				<EasingColorKeyFrame KeyTime="0:0:15.474" Value="#FFF50C0C"/>
+				<EasingColorKeyFrame KeyTime="0:0:15.61" Value="#FFF7F5F5"/>
+				<EasingColorKeyFrame KeyTime="0:0:15.747" Value="#FFF71717"/>
+				<EasingColorKeyFrame KeyTime="0:0:15.884" Value="#FFF7F5F5"/>
+				<EasingColorKeyFrame KeyTime="0:0:16.021" Value="#FFF30A0A"/>
+				<EasingColorKeyFrame KeyTime="0:0:16.157" Value="#FFF7F5F5"/>
+				<EasingColorKeyFrame KeyTime="0:0:16.295" Value="#FFF70F0F"/>
+				<EasingColorKeyFrame KeyTime="0:0:16.431" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:16.569" Value="#FFFB0808"/>
+				<EasingColorKeyFrame KeyTime="0:0:16.705" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:16.843" Value="#FFF70A0A"/>
+				<EasingColorKeyFrame KeyTime="0:0:16.979" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:17.116" Value="#FFED0C0C"/>
+				<EasingColorKeyFrame KeyTime="0:0:17.253" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:17.39" Value="#FFEF1818"/>
+				<EasingColorKeyFrame KeyTime="0:0:17.526" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:17.664" Value="#FFF50E0E"/>
+				<EasingColorKeyFrame KeyTime="0:0:17.801" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:17.938" Value="#FFF30808"/>
+				<EasingColorKeyFrame KeyTime="0:0:18.074" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:18.212" Value="#FFF50C0C"/>
+				<EasingColorKeyFrame KeyTime="0:0:18.349" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:18.485" Value="#FFF70F0F"/>
+				<EasingColorKeyFrame KeyTime="0:0:18.623" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:18.759" Value="#FFF70A0A"/>
+				<EasingColorKeyFrame KeyTime="0:0:18.896" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:19.034" Value="#FFF91313"/>
+				<EasingColorKeyFrame KeyTime="0:0:19.171" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:19.307" Value="#FFF70F0F"/>
+				<EasingColorKeyFrame KeyTime="0:0:19.444" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:19.581" Value="#FFFB0808"/>
+				<EasingColorKeyFrame KeyTime="0:0:19.718" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:19.854" Value="#FFF90A0A"/>
+				<EasingColorKeyFrame KeyTime="0:0:19.992" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:20.128" Value="#FFF91717"/>
+				<EasingColorKeyFrame KeyTime="0:0:20.266" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:20.403" Value="#FFF91D1D"/>
+				<EasingColorKeyFrame KeyTime="0:0:20.54" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:20.676" Value="#FFFD0909"/>
+				<EasingColorKeyFrame KeyTime="0:0:20.813" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:20.95" Value="#FFF50E0E"/>
+				<EasingColorKeyFrame KeyTime="0:0:21.087" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:21.223" Value="#FFFD0909"/>
+				<EasingColorKeyFrame KeyTime="0:0:21.361" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:21.498" Value="#FFFB0D0D"/>
+				<EasingColorKeyFrame KeyTime="0:0:21.635" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:21.771" Value="#FFFB0B0B"/>
+				<EasingColorKeyFrame KeyTime="0:0:21.909" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:22.046" Value="#FFF50E0E"/>
+				<EasingColorKeyFrame KeyTime="0:0:22.182" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:22.32" Value="#FFF71919"/>
+				<EasingColorKeyFrame KeyTime="0:0:22.456" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:22.593" Value="#FFF51F1F"/>
+				<EasingColorKeyFrame KeyTime="0:0:22.731" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:22.868" Value="#FFFD1111"/>
+				<EasingColorKeyFrame KeyTime="0:0:23.004" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:23.142" Value="#FFFF0B0B"/>
+				<EasingColorKeyFrame KeyTime="0:0:23.278" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:23.415" Value="#FFF91111"/>
+				<EasingColorKeyFrame KeyTime="0:0:23.551" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:23.689" Value="#FFFF0D0D"/>
+				<EasingColorKeyFrame KeyTime="0:0:23.825" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:23.963" Value="#FFF90808"/>
+				<EasingColorKeyFrame KeyTime="0:0:24.1" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:24.237" Value="#FFF91515"/>
+				<EasingColorKeyFrame KeyTime="0:0:24.373" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:24.51" Value="#FFFB1515"/>
+				<EasingColorKeyFrame KeyTime="0:0:24.647" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:24.784" Value="#FFF71313"/>
+				<EasingColorKeyFrame KeyTime="0:0:24.92" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:25.059" Value="#FFFD0B0B"/>
+				<EasingColorKeyFrame KeyTime="0:0:25.195" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:25.332" Value="#FFF50C0C"/>
+				<EasingColorKeyFrame KeyTime="0:0:25.469" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:25.606" Value="#FFF51B1B"/>
+				<EasingColorKeyFrame KeyTime="0:0:25.743" Value="#FFF9F1F1"/>
+				<EasingColorKeyFrame KeyTime="0:0:25.879" Value="#FEFB0F0F"/>
+				<EasingColorKeyFrame KeyTime="0:0:26.017" Value="#FFFDFBFB"/>
+				<EasingColorKeyFrame KeyTime="0:0:26.153" Value="#FFFB0D0D"/>
+				<EasingColorKeyFrame KeyTime="0:0:26.291" Value="#FFF9F5F5"/>
+				<EasingColorKeyFrame KeyTime="0:0:26.428" Value="#FFFD1515"/>
+				<EasingColorKeyFrame KeyTime="0:0:26.565" Value="#FFFDF9F9"/>
+				<EasingColorKeyFrame KeyTime="0:0:26.701" Value="#FFFD1515"/>
+				<EasingColorKeyFrame KeyTime="0:0:26.839" Value="#FFFDF9F9"/>
+				<EasingColorKeyFrame KeyTime="0:0:26.975" Value="#FFFD1515"/>
+				<EasingColorKeyFrame KeyTime="0:0:27.112" Value="#FFFBF7F7"/>
+				<EasingColorKeyFrame KeyTime="0:0:27.248" Value="#FFFF0909"/>
+				<EasingColorKeyFrame KeyTime="0:0:27.386" Value="#FFFBF3F3"/>
+				<EasingColorKeyFrame KeyTime="0:0:27.523" Value="#FFEB1818"/>
+				<EasingColorKeyFrame KeyTime="0:0:27.66" Value="#FFFBF3F3"/>
+				<EasingColorKeyFrame KeyTime="0:0:27.797" Value="#FFF51515"/>
+				<EasingColorKeyFrame KeyTime="0:0:27.934" Value="#FFFBF3F3"/>
+				<EasingColorKeyFrame KeyTime="0:0:28.07" Value="#FFF11616"/>
+				<EasingColorKeyFrame KeyTime="0:0:28.208" Value="#FFFBF3F3"/>
+				<EasingColorKeyFrame KeyTime="0:0:28.344" Value="#FFFD1313"/>
+				<EasingColorKeyFrame KeyTime="0:0:28.481" Value="#FFFBF3F3"/>
+				<EasingColorKeyFrame KeyTime="0:0:28.617" Value="#FFF51313"/>
+				<EasingColorKeyFrame KeyTime="0:0:28.756" Value="#FFFBF3F3"/>
+				<EasingColorKeyFrame KeyTime="0:0:28.892" Value="#FFE91818"/>
+				<EasingColorKeyFrame KeyTime="0:0:29.029" Value="#FFFBF3F3"/>
+				<EasingColorKeyFrame KeyTime="0:0:29.166" Value="#FFF71919"/>
+				<EasingColorKeyFrame KeyTime="0:0:29.303" Value="#FFFBF3F3"/>
+				<EasingColorKeyFrame KeyTime="0:0:29.44" Value="#FFF71515"/>
+				<EasingColorKeyFrame KeyTime="0:0:29.577" Value="#FFFBF3F3"/>
+				<EasingColorKeyFrame KeyTime="0:0:29.714" Value="#FFE70808"/>
+				<EasingColorKeyFrame KeyTime="0:0:29.85" Value="#FFFBF3F3"/>
+				<EasingColorKeyFrame KeyTime="0:0:29.988" Value="#FFED0808"/>
+				<EasingColorKeyFrame KeyTime="0:0:30.125" Value="#FFFBF3F3"/>
+				<EasingColorKeyFrame KeyTime="0:0:30.262" Value="#FFF32525"/>
+				<EasingColorKeyFrame KeyTime="0:0:30.398" Value="#FFFBF3F3"/>
+				<EasingColorKeyFrame KeyTime="0:0:30.536" Value="#FFE40F0F"/>
+				<EasingColorKeyFrame KeyTime="0:0:30.672" Value="#FFFBF3F3"/>
+				<EasingColorKeyFrame KeyTime="0:0:30.809" Value="#FFEF1212"/>
+				<EasingColorKeyFrame KeyTime="0:0:30.945" Value="#FFFBF3F3"/>
+				<EasingColorKeyFrame KeyTime="0:0:31.083" Value="#FFED1212"/>
+				<EasingColorKeyFrame KeyTime="0:0:31.22" Value="#FFFBF3F3"/>
+				<EasingColorKeyFrame KeyTime="0:0:31.357" Value="#FFED1212"/>
+				<EasingColorKeyFrame KeyTime="0:0:31.494" Value="#FFFBF3F3"/>
+				<EasingColorKeyFrame KeyTime="0:0:31.631" Value="#FFED0E0E"/>
+				<EasingColorKeyFrame KeyTime="0:0:31.767" Value="#FFFBF3F3"/>
+				<EasingColorKeyFrame KeyTime="0:0:31.905" Value="#FFF91919"/>
+				<EasingColorKeyFrame KeyTime="0:0:32.041" Value="#FFFBF3F3"/>
+				<EasingColorKeyFrame KeyTime="0:0:32.178" Value="#FFFF0B0B"/>
+				<EasingColorKeyFrame KeyTime="0:0:32.314" Value="#FFFBF3F3"/>
+				<EasingColorKeyFrame KeyTime="0:0:32.453" Value="#FFF92626"/>
+				<EasingColorKeyFrame KeyTime="0:0:32.589" Value="#FFFBF3F3"/>
+				<EasingColorKeyFrame KeyTime="0:0:32.726" Value="#FFF71D1D"/>
+				<EasingColorKeyFrame KeyTime="0:0:32.863" Value="#FFFBF3F3"/>
+				<EasingColorKeyFrame KeyTime="0:0:33" Value="#FFEF0E0E"/>
+			</ColorAnimationUsingKeyFrames>
+		</Storyboard>
+	</phone:PhoneApplicationPage.Resources>
+
+	<phone:PhoneApplicationPage.FontFamily>
+		<StaticResource ResourceKey="PhoneFontFamilyNormal"/>
+	</phone:PhoneApplicationPage.FontFamily>
+	<phone:PhoneApplicationPage.FontSize>
+		<StaticResource ResourceKey="PhoneFontSizeNormal"/>
+	</phone:PhoneApplicationPage.FontSize>
+	<phone:PhoneApplicationPage.Foreground>
+		<StaticResource ResourceKey="PhoneForegroundBrush"/>
+	</phone:PhoneApplicationPage.Foreground>
+
+	<!--LayoutRoot is the root grid where all page content is placed-->
+	<Grid x:Name="LayoutRoot" Background="Transparent" Margin="0,-32,0,0">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+		
+		<!--TitlePanel contains the name of the application and page title-->
+
+		<!--ContentPanel - place additional content here-->
+		<my:AdControl Height="80" HorizontalAlignment="Left" Margin="1,689,0,0" x:Name="adControl1" VerticalAlignment="Top" Width="480" ApplicationId="f2f18f08-1552-4b7a-99c4-f553e3d25cea" AdUnitId="28138" />
+        <!--ContentPanel - place additional content here-->
+		<Grid x:Name="ContentPanel" Margin="-1,0,1,1" Background="#FFFB0808" Grid.RowSpan="2"/>
+		<Button Content="Button" Margin="5,3,5,2" Grid.RowSpan="2" Opacity="0">
+			<Custom:Interaction.Triggers>
+				<Custom:EventTrigger EventName="Click">
+					<ic:NavigateToPageAction TargetPage="/MainPage.xaml"/>
+				</Custom:EventTrigger>
+			</Custom:Interaction.Triggers>
+		</Button>
+    </Grid>
+</phone:PhoneApplicationPage>
